@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <hr>
+        <br>
+        <div class="inputPass">
+            <input type="text" id="passwordId" class="password" disabled>
+            <span id="copyIcon" class="material-symbols-outlined">content_copy</span>
+        </div>
+        <div>
+            <input type="range" id="inputSlider" class="range" min="1" max="30" value="8">
+        </div>
+        <div class="row">
+            <p>Your Password Length</p><span id="rangevalue"></span>
+           
+        </div>
+        <br>
+        <div class="row">
+            <label for="toUpperCase">Do you want to add Upper Char(A-Z)</label>
+            <input type="checkbox" id="toUpperCase" checked>
+        </div>
+        <div class="row">
+            <label class="msgText" for="toLowerCase">Do you want to add Lower Char(a-z)</label>
+            <input class="checkTag" type="checkbox" id="toLowerCase" checked>
+        </div> 
+        <div class="row">
+            <label for="number">Do you want to add number(0-9)</label>
+            <input type="checkbox" id="number" checked>
+        </div>
+        <div class="row">
+            <label for="symbol">Do you want to add symbol(@,#,$,...etc)</label>
+            <input type="checkbox" id="symbol" checked>
+        </div>
+        <br>
+        <div class="mybtn">
+            <button type="button" id="mybtn">Generate Password</button>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

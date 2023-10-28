@@ -1,0 +1,96 @@
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgb(30, 218, 231), rgb(10, 119, 134),rgb(33, 112, 75),rgb(14, 190, 202));
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+.container{
+    padding: 15px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   /* width: 40%; */
+   color: white;
+   background:transparent;
+  box-shadow: 4px 4px 15px black;
+  background-image: linear-gradient( rgb(22, 93, 185), rgb(37, 180, 156),rgb(6, 69, 73),rgb(9, 81, 122));
+}
+input{
+    margin: 10px;
+    padding: 5px;
+    
+
+}
+.row{
+    display: flex;
+    margin-block: 5px;
+}
+.row span{
+    margin-right: 20px;
+}
+.row p, .row label{
+    flex-basis: 100%;
+}
+
+.row p{
+    text-align: left;
+    margin-inline: 20px;
+}
+
+.row label{
+    text-align: left;
+    margin-inline: 20px;
+}
+
+.row input[type="checkbox"]{
+    margin-top: -10px;
+    height: 25px;
+    width: 25px;
+}
+
+.range{
+    width: 90%;
+}
+.password{
+    width:90%;
+    height: 40px;
+}
+
+.mybtn button{
+    display: flex;
+    width: 50%;
+    height: 35px;
+    margin-left: 23%;
+   justify-content: center;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   background: transparent;
+   border-radius: 5px;
+   font-size: medium;
+   font-weight: bold;
+}
+.mybtn button:hover{
+    background-color: blue;
+}
+
+.inputPass{
+    position: relative;
+}
+#copyIcon{
+    position: absolute;
+    color: black;
+    cursor: pointer;
+    top: 18px;
+    right: 27px;
+    z-index: 2;
+}
